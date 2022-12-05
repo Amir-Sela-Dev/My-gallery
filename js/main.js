@@ -13,11 +13,10 @@ function renderProj() {
           <i class="fa fa-plus fa-3x"></i>
         </div>
       </div>
-      <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+      <img class="img-fluid" src="img/${proj.url}.png" alt="">
     </a>
     <div class="portfolio-caption">
       <h4>${proj.name}</h4>
-      <p class="text-muted">Illustration</p>
     </div>
   </div>
   `
@@ -38,7 +37,7 @@ function onOpenProj(projId) {
     document.querySelector('.item-intro').innerText = proj.title
     document.querySelector('.desc').innerText = proj.desc
     var date = new Date(proj.publishedAt)
-    document.querySelector('.date span').innerText = date.getFullYear()
+    document.querySelector('.date span').innerText = (date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear())
 
 
 
