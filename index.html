@@ -33,8 +33,24 @@
   <aside class="offcanvas-aside">
 
     <!-- Contact -->
-    <section id="contact">
-      <h4>Contact Me</h4>
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <hr>
+      <form onsubmit="onSubmit()">
+        <h6>Your E-mail</h6>
+        <input type="text" name="e-mail" placeholder="name@example.com" />
+        <hr>
+        <h6>Subject</h6>
+        <input type="text" name="subject" placeholder="Type subject here" />
+        <hr>
+        <div class="submit">
+          <h6> Message Body</h6>
+          <textarea name="message" cols="30" rows="10" placeholder="Type message text here"></textarea>
+          <hr>
+          <button class="btn btn-success">Submit</button>
+        </div>
+      </form>
+
     </section>
 
   </aside>
@@ -91,32 +107,28 @@
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-css3 fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">CSS</h4>
+          <p class="text-muted">I'm very passionate CSS developer - not a regular Front End Developer - and
+            stayed up-to-date with CSS stuff.</p>
+        </div>
+
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Fixing with JS</h4>
+          <p class="text-muted">Specialities in fixing problems from any kind using JS.</p>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto
-            quo inventore harum ex
-            magni, dicta impedit.</p>
+          <h4 class="service-heading">HTML</h4>
+          <p class="text-muted">Know how to built complex website using HTML techniques.</p>
         </div>
       </div>
     </div>
@@ -151,7 +163,7 @@
 
 
   <!-- Me -->
-  <section class="bg-light" id="me" style="padding: 0px;">
+  <section class="bg-light1" id="me" style="padding-block: 20vh ;">
     <div class="row">
       <div class="col-sm-4">
         <div class="team-member">
@@ -161,7 +173,7 @@
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="#">
-                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
               </a>
             </li>
             <li class="list-inline-item">
@@ -205,7 +217,7 @@
           <ul class="list-inline social-buttons flex-align-center">
             <li class="list-inline-item">
               <a href="#">
-                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
               </a>
             </li>
             <li class="list-inline-item flex-align-center">
@@ -252,7 +264,9 @@
                 <!-- Project Details Go Here -->
                 <h2>Minesweeper</h2>
                 <p class="item-intro text-muted">Building mine sweeper game.</p>
-                <img cl ass="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                <div class="img">
+
+                </div>
                 <p class="desc">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit. Est
                   blanditiis

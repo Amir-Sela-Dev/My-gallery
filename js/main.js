@@ -26,10 +26,6 @@ function renderProj() {
 }
 
 
-
-
-
-
 function onOpenProj(projId) {
     var proj = getProjById(projId)
     var elModal = document.querySelector('.modal-content')
@@ -38,10 +34,13 @@ function onOpenProj(projId) {
     document.querySelector('.desc').innerText = proj.desc
     var date = new Date(proj.publishedAt)
     document.querySelector('.date span').innerText = (date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear())
+    document.querySelector('.img').innerHTML = `<img class="img-fluid d-block mx-auto" src="img/${proj.url}.png" alt="">`
+}
 
 
-
-
-
-
+function onSubmit() {
+    var mail = document.querySelector('input[name="e-mail"]').value
+    var subject = document.querySelector('input[name="subject"]').value
+    var message = document.querySelector('textarea[name="message"]').value
+    window.open`https://mail.google.com/mail/?view=cm&fs=1&to=amirsela10@gmail.com&su=${subject}&body=${message}`
 }
