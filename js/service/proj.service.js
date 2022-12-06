@@ -43,7 +43,7 @@ var gProjs = [
         name: "Books Shop",
         title: "Building Books Shop app",
         desc: makeLorem(),
-        url: "portfolio/books-Shop",
+        url: "portfolio/book-Shop",
         publishedAt: 1669921200000,
         labels: ["Matrixes", "keyboard events"],
     },
