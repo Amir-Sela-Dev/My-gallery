@@ -1,10 +1,12 @@
 console.log('Starting up');
 
 
+function onInit() {
+    renderProjects()
+}
 
-renderProj()
-function renderProj() {
-    var projs = getProj()
+function renderProjects() {
+    var projs = getProjects()
     var strHtmls = projs.map(proj => `
     <div class="col-md-4 col-sm-6 portfolio-item">
     <a data-proj-id="${proj.id}" class="portfolio-link" data-toggle="modal" href="#portfolioModal1" onclick="onOpenProj('${proj.id}')"">

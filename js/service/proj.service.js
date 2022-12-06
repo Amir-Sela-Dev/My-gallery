@@ -62,7 +62,7 @@ var gProjs = [
 
 
 
-function getProj() {
+function getProjects() {
     return gProjs
 }
 
